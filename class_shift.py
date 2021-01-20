@@ -31,7 +31,11 @@ class Shift:
                f'{self.date_to}, ' \
                f'{self.week_days}'
 
-    """переопределение метода сравнения смен"""
+    """
+    переопределение метода сравнения смен
+    False - смены не пересекаются
+    True - пересекаются
+    """
     def __cmp__(self, other):
         if (self.date_to < other.date_from and
             self.week_days[-1] != (other.week_days[0]-1)) or \
