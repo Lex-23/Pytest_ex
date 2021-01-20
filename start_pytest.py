@@ -1,6 +1,6 @@
 import pytest
 from datetime import date, time
-from test import Shift
+from class_shift import Shift
 
 
 """смены, которые нужно проверить на факт пересечения по времени"""
